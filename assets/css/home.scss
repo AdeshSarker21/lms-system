@@ -1,0 +1,137 @@
+
+    .hero-banner {
+        padding: 50px 24px;
+        background: url(../images/hero-banner-bg.png);
+        background-size: cover;
+        background-position: center center;
+        border-radius: 20px;
+        box-shadow: 0px 4px 16px 0px #00000012;
+        margin-bottom: 40px;
+
+        .content-left {
+            .title {
+                font-size: 35px;
+                line-height: 40px;
+                font-weight: 400;
+                color: #FFFFFF;
+                margin-bottom: 17px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+                line-height: 27px;
+                font-weight: 400;
+                color: #FFFFFF;
+                margin-bottom: 26px;
+            }
+
+            .btn-update {
+                padding: 14px 52px;
+                border-radius: 10px;
+                background-color: #FFC300;
+                color: #fff;
+                border: 1px solid #FFC300;
+                transition: all .3s linear;
+
+                &:hover {
+                    border: 1px solid #FFC300;
+                    background-color: #fff;
+                    color: #FFC300;
+                }
+            }
+        }
+    }
+
+// Recomendation section css start
+.reconmendation-section {
+    margin-bottom: 10px;
+
+    .section-title-wrapper {
+        margin-bottom: 18px;
+    }
+}
+
+// Recomendation section css end
+// educator section css start
+.educator-section {
+    margin-bottom: 10px;
+
+    .section-title-wrapper {
+        margin-bottom: 30px;
+    }
+}
+
+// educator section css end
+// Collection section css start
+.collection-section {
+    padding-bottom: 35px;
+
+    .section-title-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 18px;
+    }
+
+    .recomendation-slider-wrapper {
+        margin-bottom: 0;
+    }
+}
+
+// Collection section css end
+// courses section css start
+.popular-courses-section {
+    margin-bottom: 10px;
+
+    .section-title-wrapper {
+        margin-bottom: 21px;
+    }
+}
+
+// courses section css end
+
+
+
+@media(max-width: 767px) {
+        .hero-banner {
+            padding: 28px 18px;
+            margin-bottom: 30px;
+
+            .content-left {
+                .title {
+                    font-size: 26px;
+                    line-height: 34px;
+                    margin-bottom: 8px;
+                }
+
+                .subtitle {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+                .btn-update {
+                    padding: 10px 52px;
+                }
+            }
+        }
+}
+
+@media(max-width: 575px) {
+        .hero-banner {
+            .custom-row {
+                flex-direction: column-reverse;
+            }
+
+            .img-wrapper {
+                text-align: center;
+
+                img {
+                    width: 140px;
+                }
+            }
+
+            .content-left {
+                text-align: center;
+            }
+        }
+}

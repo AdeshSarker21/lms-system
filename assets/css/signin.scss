@@ -1,0 +1,266 @@
+.signin-section {
+    .container-fluid {
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .signin-content {
+        min-height: 100vh;
+
+        .section-heading {
+            margin-bottom: 70px;
+
+            .subheading {
+                font-weight: 400;
+            }
+        }
+
+        .signin-content-left {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 120px 0;
+
+            .form-input-wrapper {
+                margin-bottom: 32px;
+            }
+
+            .content-left-wrapper {
+                max-width: 523px;
+                width: 100%;
+            }
+
+            .button-wrapper {
+                margin-bottom: 30px;
+
+                .btn-signin {
+                    width: 100%;
+                    padding: 21px;
+                    color: #FFFFFF;
+                    background-color: #1B253E;
+                    border-bottom-color: #FFC300;
+                    width: 100%;
+
+                    &:hover {
+                        color: #1B253E !important;
+                        background-color: #FFC300 !important;
+                        border-bottom-color: #1B253E !important;
+                    }
+                }
+            }
+
+            .bottom-content {
+                p {
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 400;
+                    color: #909090;
+                    text-align: center;
+
+                    a {
+                        color: #FFC300;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        .signin-content-right {
+            background: url(../images/signin-bg.png) no-repeat;
+            background-size: cover;
+            background-position: center center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 120px 0;
+
+            .content-right-wrapper {
+                max-width: 478px;
+                width: 100%;
+
+                .logo-wrapper {
+                    margin-bottom: 114px;
+                    text-align: center;
+                    display: block;
+                }
+
+                .content-card {
+                    min-height: 315px;
+                    height: 100%;
+                    background-color: #FFFFFF6B;
+                    padding: 90px 70px;
+                    border-radius: 20px;
+
+                    .card-text {
+                        font-size: 47px;
+                        line-height: 63px;
+                        font-weight: 500;
+                        color: #FFFFFF;
+                        position: relative;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 12px;
+                            left: -50px;
+                            width: 44px;
+                            height: 44px;
+                            background: url(../images/right-arrow-shape.svg) no-repeat;
+                            background-size: contain;
+                            background-position: center center;
+                        }
+
+                        span {
+                            color: #203864;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .signin-section {
+        .signin-content {
+            .section-heading {
+                margin-bottom: 40px;
+            }
+
+            .signin-content-left {
+                padding: 70px 0;
+                height: 100%;
+
+                .content-left-wrapper {
+                    padding: 0 20px;
+                }
+            }
+
+            .signin-content-right {
+                padding: 70px 0;
+                height: 100%;
+
+                .content-right-wrapper {
+                    padding: 0 20px;
+
+                    .logo-wrapper {
+                        margin-bottom: 60px;
+                    }
+
+                    .content-card {
+                        min-height: unset;
+                        padding: 40px;
+
+                        .card-text {
+                            font-size: 38px;
+                            line-height: 54px;
+
+                            &::before {
+                                top: 17px;
+                                left: -30px;
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .signin-section {
+        .signin-content {
+            .section-heading {
+                .heading {
+                    margin-bottom: 5px;
+                }
+            }
+
+            .signin-content-right {
+                .content-right-wrapper {
+                    .content-card {
+                        padding: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .signin-section {
+        .signin-content {
+            .row {
+                flex-direction: column-reverse;
+            }
+
+            .signin-content-left {
+                padding: 35px 0;
+                min-height: unset;
+                height: unset;
+            }
+
+            .signin-content-right {
+                padding: 35px 0;
+                min-height: unset;
+                height: unset;
+
+                .content-right-wrapper {
+                    .logo-wrapper {
+                        max-width: 210px;
+                        margin: 0 auto 30px;
+                    }
+
+                    .content-card {
+                        padding: 30px 10px 30px 30px;
+                        border-radius: 10px;
+
+                        .card-text {
+                            font-size: 28px;
+                            line-height: 35px;
+
+                            &:before {
+                                top: 9px;
+                                left: -24px;
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .signin-section {
+        .signin-content {
+            .section-heading {
+                margin-bottom: 25px;
+            }
+
+            .signin-content-left {
+                .button-wrapper {
+                    margin-bottom: 15px;
+
+                    .btn-signin {
+                        padding: 14px;
+                    }
+                }
+
+                .bottom-content p {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}

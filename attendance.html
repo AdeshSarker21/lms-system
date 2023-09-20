@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance</title>
+
+    <!--font link start-->
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="assets/fonts/urbanist/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!--font link end-->
+   
+    <!-- aos animation link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!--bootstrap link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--main stylesheet-->
+    <link rel="stylesheet" href="assets/css/attendance.css">
+
+
+</head>
+<body>
+    <!-- header area start -->
+    <div class="attendance-header">
+        <div class="container-fluid custom-padding">
+            <div class="attendance-header-main-area">
+                <div class="page-back">
+                    <div class="page-back-arrow">
+                        <a href="mycourses.html" class="back-arrow-link"><img src="assets/images/create-cource/arrow-left-long.svg" alt=""></a>
+                    </div>
+                    <div class="current-page-name">
+                            <a href="#">My Course</a>
+                            <a href="#">>Attendance</a>
+                    </div>
+                </div>
+                <div class="attendance-header-bottom">
+                    <div class="group-search-area">
+                        <input type="text" placeholder="All Student Groups" class="group-search">
+                        <a href="#" class="search-dropdown-btn">
+                            <img src="assets/images/create-cource/arrow-bottom-white.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="attendance-header-button-area">
+                        <button class="add-btn" id="addDayandWeekbtn">Add Days & Week</button>
+                        <button class="export-btn"><img src="assets/images/create-cource/export-icon.svg" alt="">Export</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header area end -->
+
+    <!-- attendance sheet area start -->
+    <div class="attendance-sheet">
+        <div class="container-fluid custom-padding">
+            <div class="attendance-main-sheet">
+
+                <!-- attendance date area start -->
+                <div class="attendance-row">
+                    <div class="attendance-columns"></div>
+                    <div class="attendance-columns">
+                        <span class="attendance-date responsive-date-big-screen">12-5-2023 to 17-5-2023</span>
+                        <span class="attendance-date responsive-attendance-date">12-5-2023 <br> to <br> 17-5-2023</span>
+                    </div>
+                    <div class="attendance-columns">
+                        <span class="attendance-date responsive-date-big-screen">18-5-2023 to 23-5-2023</span>
+                        <span class="attendance-date responsive-attendance-date">18-5-2023 <br> to <br> 23-5-2023</span>
+                    </div>
+                    <div class="attendance-columns">
+                        <span class="attendance-date responsive-date-big-screen">24-5-2023 to 29-5-2023</span>
+                        <span class="attendance-date responsive-attendance-date">24-5-2023 <br> to <br> 29-5-2023</span>
+                    </div>
+                    <div class="attendance-columns"></div>
+                </div>
+                 <!-- attendance date area end -->
+
+                 <!-- attendance week area start -->
+                <div class="attendance-row attendance-section-row">
+                    <div class="attendance-columns">
+                        <span class="attendance-section">Week</span>
+                    </div>
+                    <div class="attendance-columns">
+                        <span class="attendance-section">Week 1 
+                            <a href="#" class="edit">
+                                <img src="assets/images/create-cource/edite.svg" alt="">
+                            </a>
+                        </span>
+                    </div>
+                    <div class="attendance-columns">
+                        <span class="attendance-section">Week 2
+                            <a href="#" class="edit">
+                                <img src="assets/images/create-cource/edite.svg" alt="">
+                            </a>
+                        </span>
+                    </div>
+                    <div class="attendance-columns">
+                        <span class="attendance-section">Week 3
+                            <a href="#" class="edit">
+                                <img src="assets/images/create-cource/edite.svg" alt="">
+                            </a>
+                        </span>
+                    </div>
+                    <div class="attendance-columns">
+                        <a href="#" class="add-more">
+                            <span>
+                                <img src="assets/images/create-cource/plus-icon.svg" alt="">
+                            </span>
+                            <span>
+                                Add More
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <!-- attendance week area end-->
+
+                 <!-- ============================================-->
+                <!--== attendance day by day prasent area start ==-->
+                <!-- ============================================ -->
+                <div class="attendance-row attendance-day-row">
+
+                    <!-- student list area start -->
+                    <div class="attendance-columns student-list">
+                        <span class="day-header">Day</span>
+                        <span class="student-name blue">Student 1</span>
+                        <span class="student-name gray">Student 1</span>
+                        <span class="student-name blue">Student 1</span>
+                        <span class="student-name gray">Student 1</span>
+                        <span class="student-name blue">Student 1</span>
+                        <span class="student-name gray">Student 1</span>
+                        <span class="student-name blue">Student 1</span>
+                        <span class="student-name gray">Student 1</span>
+                        <span class="student-name blue">Student 1</span>
+                        <span class="student-name gray">Student 1</span>
+                        <span class="student-name blue">Student 1</span>
+                    </div>
+                     <!-- student list area end -->
+
+
+                    <!-- ============================= -->
+                    <!-- first week prasent area start -->
+                    <!-- ============================= -->
+                    <div class="attendance-columns number-of-day-list">
+                        <div class="number-of-date-header">
+
+                            <!-- first week first day prasent area start -->
+                            <div class="number-of-date">
+                                <div class="day-one-header">
+                                    <span class="responsive-day-fullscreen">Day 1</span>
+                                    <span class="responsive-day">Day <br> 1</span>
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                        
+                                
+                            </div>
+                            <!-- first week first day prasent area end -->
+
+
+                            <!-- first week secound day prasent area start -->
+                            <div class="number-of-date">
+                                <div class="day-one-header">
+                                    <span class="responsive-day-fullscreen">Day 2</span>
+                                    <span class="responsive-day">Day <br> 2</span>
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                        
+                                
+                            </div>
+                            <!-- first week secound day prasent area end -->
+
+
+                            <!-- first week third day prasent area start -->
+                            <div class="number-of-date">
+                                <div class="day-one-header">
+                                    <span class="responsive-day-fullscreen">Day 3</span>
+                                    <span class="responsive-day">Day <br> 3</span>
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                        
+                                
+                            </div>
+                            <!-- first week third day prasent area end -->
+
+
+                            <!-- first week fourth day prasent area start -->
+                            <div class="number-of-date">
+                                <div class="day-one-header">
+                                    <span class="responsive-day-fullscreen">Day 4</span>
+                                    <span class="responsive-day">Day <br> 4</span>
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                        
+                                
+                            </div>
+                            <!-- first week fourth day prasent area end -->
+
+
+                            <!-- first week fifth day prasent area start -->
+                            <div class="number-of-date">
+                                <div class="day-one-header">
+                                    <span class="responsive-day-fullscreen">Day 5</span>
+                                    <span class="responsive-day">Day <br> 5</span>
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                        
+                                
+                            </div>
+                            <!-- first week fifth day prasent area end -->
+
+                            
+                        </div>
+                    </div>
+                    <!-- =========================== -->
+                    <!-- first week prasent area end -->
+                    <!-- =========================== -->
+                   
+
+                    <!-- =============================== -->
+                    <!-- secound week prasent area start -->
+                    <!-- =============================== -->
+                    <div class="attendance-columns number-of-day-list">
+                        <div class="number-of-date-header">
+
+                            <!-- secound week first day prasent area start -->
+                            <div class="number-of-date">
+                                <div class="day-one-header">
+                                    <span class="responsive-day-fullscreen">Day 1</span>
+                                    <span class="responsive-day">Day <br> 1</span>
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                        
+                                
+                            </div>
+                            <!-- secound week first day prasent area end -->
+
+
+                            <!-- secound week secound day prasent area start -->
+                            <div class="number-of-date">
+                                <div class="day-one-header">
+                                    <span class="responsive-day-fullscreen">Day 2</span>
+                                    <span class="responsive-day">Day <br> 2</span>
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                        
+                                
+                            </div>
+                            <!-- secound week secound day prasent area end -->
+
+
+                            <!-- secound week third day prasent area start -->
+                            <div class="number-of-date">
+                                <div class="day-one-header">
+                                    <span class="responsive-day-fullscreen">Day 3</span>
+                                    <span class="responsive-day">Day <br> 3</span>
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                        
+                                
+                            </div>
+                            <!-- secound week third day prasent area end -->
+
+
+                            <!-- secound week fourth day prasent area start -->
+                            <div class="number-of-date">
+                                <div class="day-one-header">
+                                    <span class="responsive-day-fullscreen">Day 4</span>
+                                    <span class="responsive-day">Day <br> 4</span>
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                        
+                                
+                            </div>
+                            <!-- secound week fourth day prasent area end -->
+
+
+                            <!-- secound week fifth day prasent area start -->
+                            <div class="number-of-date">
+                                <div class="day-one-header">
+                                    <span class="responsive-day-fullscreen">Day 5</span>
+                                    <span class="responsive-day">Day <br> 5</span>
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                        
+                                
+                            </div>
+                            <!-- secound week fifth day prasent area end -->
+
+                            
+                        </div>
+                    </div>
+                    <!-- ============================= -->
+                    <!-- secound week prasent area end -->
+                    <!-- ============================= -->
+
+
+                    <!-- ============================= -->
+                    <!-- third week prasent area start -->
+                    <!-- ============================= -->
+                    <div class="attendance-columns number-of-day-list">
+                        <div class="number-of-date-header">
+
+                            <!-- third week first day prasent area start -->
+                            <div class="number-of-date">
+                                <div class="day-one-header">
+                                    <span class="responsive-day-fullscreen">Day 1</span>
+                                    <span class="responsive-day">Day <br> 1</span>
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                        
+                                
+                            </div>
+                            <!-- third week first day prasent area end -->
+
+
+                            <!-- third week secound day prasent area start -->
+                            <div class="number-of-date">
+                                <div class="day-one-header">
+                                    <span class="responsive-day-fullscreen">Day 2</span>
+                                    <span class="responsive-day">Day <br> 2</span>
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                        
+                                
+                            </div>
+                            <!-- third week secound day prasent area end -->
+
+
+                            <!-- third week third day prasent area start -->
+                            <div class="number-of-date">
+                                <div class="day-one-header">
+                                    <span class="responsive-day-fullscreen">Day 3</span>
+                                    <span class="responsive-day">Day <br> 3</span>
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                        
+                                
+                            </div>
+                            <!-- third week third day prasent area end -->
+
+
+                            <!-- third week fourth day prasent area start -->
+                            <div class="number-of-date">
+                                <div class="day-one-header">
+                                    <span class="responsive-day-fullscreen">Day 4</span>
+                                    <span class="responsive-day">Day <br> 4</span>
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                        
+                                
+                            </div>
+                            <!-- third week fourth day prasent area end -->
+
+
+                            <!-- third week fifth day prasent area start -->
+                            <div class="number-of-date">
+                                <div class="day-one-header">
+                                    <span class="responsive-day-fullscreen">Day 5</span>
+                                    <span class="responsive-day">Day <br> 5</span>
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box gray ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                                <div class="prasent-box blue ">
+                                    <span class="checkbox-area">
+                                        <input type="checkbox" id="check" class="number-of-date-checkbox prasent-check-box">
+                                    </span>
+                                </div>
+                        
+                                
+                            </div>
+                            <!-- third week fifth day prasent area end -->
+
+                            
+                        </div>
+                    </div>
+                    <!-- =========================== -->
+                    <!-- third week prasent area end -->
+                    <!-- =========================== -->
+
+
+                   
+                    <!-- ================================ -->
+                    <!-- attendance percentage area start -->
+                    <!-- ================================ -->
+                    <div class="attendance-columns attendance-percentage">
+                        <span class="student-attendance-percentage-header">Total</span>
+                        <span class="student-attendance-percentage blue">100%</span>
+                        <span class="student-attendance-percentage gray">20%</span>
+                        <span class="student-attendance-percentage blue">70%</span>
+                        <span class="student-attendance-percentage gray">100%</span>
+                        <span class="student-attendance-percentage blue">20%</span>
+                        <span class="student-attendance-percentage gray">20%</span>
+                        <span class="student-attendance-percentage blue">70%</span>
+                        <span class="student-attendance-percentage gray">100%</span>
+                        <span class="student-attendance-percentage blue">20%</span>
+                        <span class="student-attendance-percentage gray">100%</span>
+                        <span class="student-attendance-percentage blue">20%</span>
+                    </div>
+                    <!-- ============================== -->
+                    <!-- attendance percentage area end -->
+                    <!-- ============================== -->
+
+                </div>
+                <!-- ============================================ -->
+                <!--== attendance day by day prasent area end ====-->
+                <!-- ============================================ -->
+            </div>
+        </div>
+    </div>
+    <!-- attendance sheet area end -->
+
+    <!-- ===================================== -->
+    <!-- attendance day or week add area start -->
+    <!-- ===================================== -->
+    <div class="attendance-add-day-week-area">
+        <div class="day-and-week-area">
+            <div class="day-and-week-header">
+                <div class="day-and-week-header-left">
+                    <span class="addday-cross-area" id="adddayCross"><img src="assets/images/create-cource/cross.svg" alt=""></span>
+                    <span>Add Days And Weeks</span>
+                </div>
+                <div class="day-and-week-header-right">
+                    <buttton class="save-btn">Save</buttton>
+                </div>
+            </div>
+            <div class="add-day-select-date-area">
+                <span>Select Date </span>
+                <div class="add-day-select">
+                    <input type="date" class="day-select">
+                    <span>to</span>
+                    <input type="date"class="day-select">
+                </div>
+            </div>
+            <div class="enter-week-name">
+                <span>Enter Week name</span> <br> 
+                <input type="text" class="week-name-input" placeholder="week 1">
+            </div>
+            <div class="how-many-days-add">
+                <span>Select How many Days you want to add (out of 7)</span>
+                <div class="number-of-page-area">
+                    <span class="decrease" id="decrease">
+                        <i class="fa-regular fa-window-minimize minimize-icon"></i>
+                    </span> 
+                    <span class="number-of-days" id="numberOfDay">1</span>
+                    <span class="increase" id="increase">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+                    <span class="number-of-count-days" id="numberOfTotalDay">1</span>
+                    <span class="number-of-count-days">days</span>
+                </div>
+                
+        
+            </div>
+
+            <button class="add-more-days"> <i class="fa-solid fa-plus"></i> Add More</button>
+        </div>
+    </div>
+    <!-- ===================================== -->
+    <!-- attendance day or week add area end ---->
+    <!-- ===================================== -->
+
+    <!-- javascript section-->
+
+     <!-- Jquery Js -->
+     <script src="assets/js/jquery.js"></script>
+     <!-- font awesome js -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <!-- Bootstrap Bundle Js -->
+     <script src="assets/js/bootstrap.bundle.min.js"></script>
+     <!-- Slick js -->
+     <script src="assets/js/slick.min.js"></script>
+     <script src="assets/js/main.js"></script>
+    
+</body>
+</html>

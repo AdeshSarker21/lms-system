@@ -1,0 +1,810 @@
+/* typography area start */
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #ffffff;
+}
+li{
+    list-style-type: none;
+}
+ul{
+    padding-left: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+/* typography area end */
+
+
+/* ================================== */
+/*==== attendance page area start==== */
+/* ================================== */
+
+/*---- attendance header start-----  */
+.attendance-header{
+    margin-top: 40px;
+}
+.custom-padding{
+    padding: 0 40px;
+}
+.page-back{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+}
+.back-arrow-link{
+    width: 32px;
+    height: 32px;
+    padding: 0 6px 6px 6px;
+    border: 1px solid #314C80;
+    border-radius: 50%;
+    display: inline-block;
+   
+}
+.current-page-name{
+    
+}
+.current-page-name a:first-child{
+    color:#8F8F8F;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+}
+.current-page-name a:last-child{
+    color: #364E79;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+ 
+}
+.attendance-header-bottom{
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.group-search-area{
+    position: relative;
+}
+.group-search{
+    border-radius: 15px;
+    border: 1px solid #AFC5EF;
+    background: #FAFAFA;
+    padding: 20px 97px 20px 28px;
+    color: #8F8F8F;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+.search-dropdown-btn{
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    background: #314C80;
+    border-radius: 7px;
+    padding: 4px 7px 5px 7px;
+    position: absolute;
+    top: 13px;
+    right: 50px;
+
+}
+.attendance-header-button-area{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 50px;
+}
+.add-btn{
+    display: inline-flex;
+    padding: 15px 30px;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border-bottom: 3px solid var(--Primary-Y, #FFC300);
+    background: #314C80;
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.export-btn{
+    display: inline-flex;
+    padding: 15px 30px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border-bottom: 3px solid #203864;
+    background: #FFC300;
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+/*---- attendance header end-----  */
+
+
+/*---- attendance  sheet start-----  */
+.attendance-main-sheet{
+    margin-top: 32px;
+    padding-bottom: 50px;
+}
+.attendance-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #E1E9F6;
+}
+.attendance-row:nth-child(1){
+    border-bottom: 1px solid #B9D1F8;
+}
+.attendance-columns{
+    text-align: center;
+    padding-top: 3px;
+   
+}
+.attendance-columns:nth-child(1){
+    width: 12.5%;
+    text-align: left;
+}
+.attendance-columns:nth-child(2){
+    width: 25%;
+}
+.attendance-columns:nth-child(3){
+    width: 25%;
+}
+.attendance-columns:nth-child(4){
+    width: 25%;
+}
+.attendance-columns:nth-child(5){
+    width: 12.5%;
+}
+
+
+/*---- attendance date area start----- */
+.attendance-date{
+    color: #8C90B6;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 4px;
+    display: inline-block;
+}
+.responsive-attendance-date{
+    display: none;
+}
+/*---- attendance date area end----- */
+
+
+/*---- attendance week section area start----- */
+.attendance-section-row> .attendance-columns{
+   padding-top: 0;
+   height: 43px;
+}
+.attendance-section{
+    display: inline-block;
+    padding-top: 18px;
+    color: #48679E;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.attendance-section-row>.attendance-columns:nth-child(1)>.attendance-section{
+    padding-left: 40px;
+}
+
+.edit{
+    display: inline-block;
+}
+.add-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background:#FFC300;
+    width: 100%;
+    height: 100%;
+}
+.add-more span:nth-child(1){
+    height: 24px;
+    width: 24px;
+    margin-bottom: 5px;
+}
+.add-more:hover{
+    color: #FFF;
+}
+/*---- attendance week section area end----- */
+
+
+/*---- attendance day area start----- */
+.attendance-day-row{
+   background: none;
+    margin-top: 9px;
+   
+}
+.attendance-day-row>.attendance-columns{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+}
+.attendance-day-row>.attendance-columns:nth-child(1){
+    flex-direction: column;
+    row-gap: 9px;
+}
+
+.student-list{
+    border-right: 2px solid #FFC300 ;
+    
+    
+}
+.number-of-day-list{
+    border-right: 2px solid #FFC300 ;
+}
+.number-of-date-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    width: 100%;
+    height: 100%;
+    
+
+}
+.number-of-date{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 9px;
+    color:#FFC300;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-right: 1px solid #E1E6EC;
+   
+}
+.number-of-date:nth-child(5){
+    border-right: none;
+}
+.day-one-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 100%;
+    height: 52px;
+    padding: 5px 0;
+    background: #FFFAE8;
+}
+.prasent-box{
+    width: 100%;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.responsive-day{
+    display: none;
+}
+.day-header{
+    color: #FFC300;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: #FFFAE8;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 40px;
+    height: 52px;
+}
+.student-name{
+    color: #48679E;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 40px;
+    height: 52px;
+}
+.blue{
+    background: #EDF4FF;
+}
+.gray{
+    background: #F7F9FA;
+}
+.number-of-date-checkbox{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #8C90B6;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.number-of-date-checkbox::after{
+    content: "\f00c";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: -2px;
+    left: 3px;
+    display: none;
+    color: white;
+    font-size: 15px;
+}
+.number-of-date-checkbox:checked::after{
+    display: block;
+    
+}
+.number-of-date-checkbox:checked{
+    background: #203864;
+    
+}
+.prasent-check-box{
+    height: 25px;
+    width: 25px;
+}
+.prasent-check-box::after {
+    content: "\f00c";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    display: none;
+    color: white;
+    font-size: 18px;
+}
+.attendance-percentage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 9px;
+}
+.student-attendance-percentage-header{
+    color: #FFC300;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: #FFFAE8;
+    width: 100%;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.student-attendance-percentage{
+    color: #48679E;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+}
+/*---- attendance day area end----- */
+
+
+/*---- attendance  sheet end-----  */
+
+@media (max-width: 1200px){
+    .attendance-section-row > .attendance-columns:nth-child(1) > .attendance-section {
+        padding-left: 10px;
+    }
+    .day-header , .student-name{
+        padding-left: 10px;
+      
+    }
+}
+@media (max-width: 992px){
+    .custom-padding {
+        padding: 0 10px;
+    }
+    .attendance-date{
+        font-size: 12px;
+    }
+    .attendance-section-row > .attendance-columns:nth-child(1) > .attendance-section {
+        padding-left: 10px;
+    }
+    .add-more{
+        font-size: 13px;
+        column-gap: 0px;
+    }
+    .day-header , .student-name{
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    .number-of-date{
+        font-size: 10px;
+    }
+    .number-of-date-checkbox {
+        width: 15px;
+        height: 15px;
+        border-radius: 3px;
+    }
+    .prasent-check-box {
+        height: 20px;
+        width: 20px;
+    }
+    .student-attendance-percentage-header , .student-attendance-percentage{
+        font-size: 14px;
+    }
+    
+}
+@media (max-width: 768px){
+    .group-search {
+        border-radius: 10px;
+        padding: 13px 0px 13px 12px;
+    }
+    .search-dropdown-btn {
+        width: 29px;
+        height: 29px;
+        padding: 1px 7px 5px 7px;
+        top: 9px;
+        right: 13px;
+    }
+    .attendance-header-button-area{
+        column-gap: 10px;
+    }
+    .add-btn {
+        padding: 12px 8px;
+        font-size: 13px;
+    }
+    .export-btn{
+        padding: 7px 8px;
+        font-size: 13px;
+    }
+    .attendance-date {
+        font-size: 9px;
+    }
+    .attendance-section{
+        font-size: 11px;
+    }
+    .add-more {
+        font-size: 10px;
+    }
+    .day-header, .student-name {
+        padding-left: 7px;
+        font-size: 10px;
+        height: 36px;
+    }
+    .student-attendance-percentage-header, .student-attendance-percentage {
+        font-size: 10px;
+    }
+    .number-of-date {
+        font-size: 7px;
+    }
+    .number-of-date-checkbox {
+        width: 9px;
+        height: 9px;
+        border-radius: 1px;
+    }
+    .prasent-check-box {
+        height: 13px;
+        width: 13px;
+    }
+    .day-one-header , .prasent-box, 
+    .student-attendance-percentage-header,
+    .student-attendance-percentage{
+        height: 36px;
+    }
+    .add-more span:nth-child(1) {
+        height: 20px;
+        width: 24px;
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 481px){
+    .attendance-header-bottom{
+        flex-wrap: wrap;
+    }
+    .group-search, .group-search-area{
+        width: 100%;
+    }
+    .attendance-header-button-area {
+        margin-top: 20px;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .responsive-attendance-date{
+        display: block;
+    }
+    .responsive-date-big-screen{
+        display: none;
+    }
+    .custom-padding {
+        padding: 0 5px;
+    }
+    .attendance-section-row > .attendance-columns:nth-child(1) > .attendance-section,
+    .day-header, .student-name {
+        padding-left: 4px;
+        font-size: 7px;
+    }
+    .attendance-section {
+        font-size: 9px;
+    }
+    .edit {
+        width: 10px;
+    }
+    .responsive-day{
+        display: block;
+    }
+    .responsive-day-fullscreen{
+        display: none;
+    }
+    .number-of-date-checkbox {
+        width: 8px;
+        height: 8px;
+        border-radius: 1px;
+    }
+    .prasent-check-box {
+        height: 11px;
+        width: 11px;
+    }
+    
+}
+
+/* ================================== */
+/*==== attendance page area end====== */
+/* ================================== */
+
+
+/* ===================================== */
+/* attendance day or week add area start */
+/* ===================================== */
+.day-and-week-area {
+    position: absolute;
+    height: 100%;
+    max-width: 584px;
+    width: 100%;
+    background: #FFF;
+    top: 0;
+    right: -100%; /* Initially off-screen to the right */
+    z-index: 999999999;
+    padding: 100px 50px;
+    overflow-y: scroll;
+}
+
+.attendance-add-day-week-area {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.60);
+    top: 0;
+    left: 0;
+    display: none;
+}
+.day-and-week-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.day-and-week-header-left{}
+.addday-cross-area{
+    border-radius: 10px;
+    background: #AFC5EF;
+    padding: 13px 15px;
+    display: inline-block;
+    cursor: pointer;
+}
+.day-and-week-header-left>span{
+    color:  #364E79;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.day-and-week-header-right{}
+.day-and-week-header-right>.save-btn{
+    color: #FFF;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+    letter-spacing: -0.4px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border-bottom: 3px solid  #FFC300;
+    background: #314C80;
+    cursor: pointer;
+}
+.add-day-select-date-area{
+    margin-bottom: 30px;
+}
+.add-day-select-date-area>span{
+    color: #636363;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.add-day-select{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.add-day-select>span{
+    color:  #313145;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.day-select{
+    color:  #364E79;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 10px;
+    padding: 15px 20px;
+    background: rgba(175, 197, 239, 0.2);
+    border: none;
+}
+.enter-week-name{
+    margin-bottom: 15px;
+}
+.enter-week-name>span{
+    color:  #636363;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+.week-name-input{
+    border-radius: 10px;
+    background: rgba(175, 197, 239, 0.2);
+    color:  #364E79;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    border: none;
+    padding: 15px 20px;
+    width: 100%;
+    margin-top: 15px;
+}
+.how-much-page-add{
+    margin-top: 30px;
+}
+.how-many-days-add>span{
+    color:  #636363;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.number-of-page-area{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 20px;
+}
+.decrease, .increase{
+    font-size: 15px;
+    padding: 0 5px 5px 5px;
+    background: #A0A3BD;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.minimize-icon{
+    margin-bottom: 15px;
+}
+.increase{
+    margin-right: 20px;
+}
+.number-of-days, .number-of-count-days{
+    color:  #203864;
+    font-family: Gilroy;
+    font-size: 20.667px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.add-more-days{
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 10px;
+    border-bottom: 3px solid #90ABDE;
+    background: #FFC300;
+    padding: 15px 30px;
+    margin-top: 40px;
+}
+@media (max-width:481px) {
+    .day-and-week-area{
+        padding: 20px;
+    }
+    .addday-cross-area {
+        border-radius: 6px;
+        padding: 5px 5px;
+    }
+    .day-and-week-header-right > .save-btn{
+        padding: 8px 17px;
+    }
+    .day-and-week-header-left > span{
+        font-size: 15px;
+    }
+    .add-day-select{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .how-many-days-add > span{
+        font-size: 12px;
+    }
+}
+/* =================================== */
+/* attendance day or week add area end */
+/* =================================== */

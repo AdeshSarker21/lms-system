@@ -1,0 +1,246 @@
+.signup-section .container-fluid {
+  padding: 0;
+  overflow: hidden;
+}
+.signup-section .signup-container .signup-left-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 52px 77px;
+  min-height: 100vh;
+  height: 100%;
+}
+.signup-section .signup-container .signup-left-content .logo-wrapper {
+  width: 213px;
+  align-self: stretch;
+  margin: 0 auto 27px;
+}
+.signup-section .signup-container .signup-left-content .heading-wrapper {
+  margin-bottom: 40px;
+  align-self: stretch;
+}
+.signup-section .signup-container .signup-left-content .heading-wrapper .heading {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #203864;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.signup-section .signup-container .signup-left-content .heading-wrapper .subheading {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #909090;
+  text-align: center;
+}
+.signup-section .signup-container .signup-left-content .form-input-wrapper {
+  align-self: stretch;
+  margin-bottom: 33px;
+}
+.signup-section .signup-container .signup-left-content .button-wrapper {
+  align-self: stretch;
+  margin-top: auto;
+}
+.signup-section .signup-container .signup-left-content .button-wrapper .btn-signup {
+  width: 100%;
+  padding: 21px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background-color: #1B253E;
+  border-bottom-color: #FFC300;
+  width: 100%;
+}
+.signup-section .signup-container .signup-left-content .button-wrapper .btn-signup:hover, .signup-section .signup-container .signup-left-content .button-wrapper .btn-signup:focus {
+  color: #1B253E !important;
+  background-color: #FFC300 !important;
+  border-bottom-color: #1B253E !important;
+}
+.signup-section .signup-container .signup-right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 77px 52px;
+  min-height: 100vh;
+  height: 100%;
+  background: linear-gradient(180deg, #203864 0%, #0B1E40 100%);
+  position: relative;
+}
+.signup-section .signup-container .signup-right-content .img-wrapper {
+  margin-bottom: 100px;
+}
+.signup-section .signup-container .signup-right-content .content {
+  max-width: 485px;
+  margin-bottom: 28px;
+}
+.signup-section .signup-container .signup-right-content .content .heading {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  text-align: center;
+  color: #FFFFFF;
+}
+.signup-section .signup-container .signup-right-content .content .subheading {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-align: center;
+}
+.signup-section .signup-container .signup-right-content .tagline {
+  position: absolute;
+  bottom: 11px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 0;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+.signup-section #step1-form .signup-right-content {
+  background: url(../images/form-bg1.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.signup-section #step2-form .signup-right-content {
+  background: url(../images/form-bg2.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.signup-section #step3-form .signup-right-content {
+  background: url(../images/form-bg1.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.signup-section #step4-form .signup-left-content .logo-wrapper {
+  margin: 0 auto 127px;
+}
+.signup-section #step4-form .signup-left-content .form-input-wrapper {
+  margin-bottom: 57px;
+}
+.signup-section #step4-form .signup-left-content .role-box .heading-wrapper {
+  margin-bottom: 26px;
+}
+.signup-section #step4-form .signup-left-content .role-box .heading-wrapper .heading {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #8C90B6;
+}
+.signup-section #step4-form .signup-left-content .role-box .radio-selection-wrapper {
+  display: flex;
+  margin-bottom: 30px;
+}
+.signup-section #step4-form .signup-left-content .role-box .radio-selection-wrapper .radio-box-wrapper h6 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.signup-section #step4-form .signup-left-content .role-box .radio-selection-wrapper .radio-box-wrapper:first-child {
+  margin-right: 30px;
+}
+.signup-section #step4-form .signup-right-content {
+  background: url(../images/form-bg1.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (max-width: 1200px) {
+  .signup-section .signup-container .signup-left-content {
+    padding: 35px 50px;
+  }
+  .signup-section .signup-container .signup-right-content {
+    padding: 70px 50px 35px;
+  }
+}
+@media (max-width: 991px) {
+  .signup-section .signup-container .signup-left-content {
+    justify-content: center;
+  }
+  .signup-section .signup-container .signup-left-content .button-wrapper {
+    margin-top: unset;
+  }
+  .signup-section .signup-container .signup-left-content .logo-wrapper {
+    width: 180px;
+  }
+  .signup-section .signup-container .signup-left-content .heading-wrapper {
+    margin-bottom: 25px;
+  }
+  .signup-section .signup-container .signup-left-content .heading-wrapper .heading {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .signup-section .signup-container .signup-left-content .heading-wrapper .subheading {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .signup-section .signup-container .signup-left-content .form-input-wrapper {
+    margin-bottom: 15px;
+  }
+  .signup-section .signup-container .signup-left-content .inputwi-wrapper .form-label {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .signup-section .signup-container .signup-left-content .inputwi-wrapper .form-control {
+    padding: 16px 16px 16px 48px;
+  }
+  .signup-section .signup-container .signup-left-content .inputwi-wrapper .input-container .icon-wrapper {
+    left: 16px;
+  }
+  .signup-section .signup-container .signup-left-content .inputwi-wrapper .input-container.password-container .icon-wrapper-two {
+    right: 20px;
+  }
+  .signup-section .signup-container .signup-left-content .inputwi-wrapper .input-container.password-container .form-control {
+    padding: 16px 52px 16px 48px;
+  }
+  .signup-section .signup-container .signup-left-content .button-wrapper .btn-signup {
+    padding: 12px;
+  }
+  .signup-section .signup-container .signup-left-content .checkbox-wrapper .form-check-input {
+    width: 24px;
+    height: 24px;
+  }
+  .signup-section .signup-container .signup-right-content {
+    justify-content: center;
+  }
+  .signup-section .signup-container .signup-right-content .img-wrapper {
+    margin-bottom: 40px;
+  }
+  .signup-section .signup-container .signup-right-content .content .heading {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .signup-section .signup-container .row {
+    flex-direction: column-reverse;
+  }
+  .signup-section .signup-container .signup-right-content {
+    padding: 45px 40px 35px;
+    min-height: unset;
+  }
+  .signup-section .signup-container .signup-right-content .img-wrapper {
+    max-width: 300px;
+    margin-bottom: 25px;
+  }
+  .signup-section .signup-container .signup-right-content .content {
+    margin-bottom: 8px;
+  }
+  .signup-section #step4-form .signup-left-content .logo-wrapper {
+    margin: 0 auto 40px;
+  }
+  .signup-section #step4-form .signup-left-content .form-input-wrapper {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 575px) {
+  .signup-section .signup-container .signup-left-content {
+    padding: 20px 30px 35px;
+  }
+  .signup-section .signup-container .signup-right-content {
+    padding: 20px 30px 35px;
+  }
+}/*# sourceMappingURL=signup.css.map */

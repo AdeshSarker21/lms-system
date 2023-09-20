@@ -1,0 +1,348 @@
+// Signup Section css start
+.signup-section {
+    .container-fluid {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .signup-container {
+        .signup-left-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 52px 77px;
+            min-height: 100vh;
+            height: 100%;
+
+            .logo-wrapper {
+                width: 213px;
+                align-self: stretch;
+                margin: 0 auto 27px;
+            }
+
+            .heading-wrapper {
+                margin-bottom: 40px;
+                align-self: stretch;
+
+                .heading {
+                    font-size: 25px;
+                    line-height: 30px;
+                    font-weight: 600;
+                    color: #203864;
+                    margin-bottom: 5px;
+                    text-align: center;
+                }
+
+                .subheading {
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 400;
+                    color: #909090;
+                    text-align: center;
+                }
+            }
+
+            .form-input-wrapper {
+                align-self: stretch;
+                margin-bottom: 33px;
+            }
+
+            .button-wrapper {
+                align-self: stretch;
+                margin-top: auto;
+
+                .btn-signup {
+                    width: 100%;
+                    padding: 21px;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #FFFFFF;
+                    background-color: #1B253E;
+                    border-bottom-color: #FFC300;
+                    width: 100%;
+
+                    &:hover,
+                    &:focus {
+                        color: #1B253E !important;
+                        background-color: #FFC300 !important;
+                        border-bottom-color: #1B253E !important;
+                    }
+                }
+            }
+        }
+
+        .signup-right-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 120px 77px 52px;
+            min-height: 100vh;
+            height: 100%;
+            background: linear-gradient(180deg, #203864 0%, #0B1E40 100%);
+            position: relative;
+
+            .img-wrapper {
+                margin-bottom: 100px;
+            }
+
+            .content {
+                max-width: 485px;
+                margin-bottom: 28px;
+
+                .heading {
+                    font-size: 20px;
+                    line-height: 28px;
+                    font-weight: 500;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+
+                .subheading {
+                    font-size: 14px;
+                    line-height: 16px;
+                    font-weight: 500;
+                    color: #FFFFFF;
+                    text-align: center;
+                }
+            }
+
+            .tagline {
+                position: absolute;
+                bottom: 11px;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-bottom: 0;
+                font-size: 10px;
+                line-height: 12px;
+                font-weight: 600;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    #step1-form {
+        .signup-right-content {
+            background: url(../images/form-bg1.png) no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+
+    #step2-form {
+        .signup-right-content {
+            background: url(../images/form-bg2.png) no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+
+    #step3-form {
+        .signup-right-content {
+            background: url(../images/form-bg1.png) no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+
+    #step4-form {
+        .signup-left-content {
+            .logo-wrapper {
+                margin: 0 auto 127px;
+            }
+
+            .form-input-wrapper {
+                margin-bottom: 57px;
+            }
+
+            .role-box {
+                .heading-wrapper {
+                    margin-bottom: 26px;
+
+                    .heading {
+                        font-size: 18px;
+                        line-height: 21px;
+                        font-weight: 400;
+                        color: #8C90B6;
+                    }
+                }
+
+                .radio-selection-wrapper {
+                    display: flex;
+                    margin-bottom: 30px;
+
+                    .radio-box-wrapper {
+                        h6 {
+                            text-align: center;
+                            margin-top: 10px;
+                            margin-bottom: 0;
+                        }
+
+                        &:first-child {
+                            margin-right: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .signup-right-content {
+            background: url(../images/form-bg1.png) no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+}
+
+// Signup Section css end
+@media(max-width: 1200px) {
+    .signup-section {
+        .signup-container {
+            .signup-left-content {
+                padding: 35px 50px;
+            }
+
+            .signup-right-content {
+                padding: 70px 50px 35px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .signup-section {
+        .signup-container {
+            .signup-left-content {
+                justify-content: center;
+                .button-wrapper{
+                    margin-top: unset;
+                }
+                .logo-wrapper {
+                    width: 180px;
+                }
+
+                .heading-wrapper {
+                    margin-bottom: 25px;
+
+                    .heading {
+                        font-size: 22px;
+                        line-height: 28px;
+                    }
+
+                    .subheading {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+
+                .form-input-wrapper {
+                    margin-bottom: 15px;
+                }
+
+                .inputwi-wrapper {
+                    .form-label {
+                        font-size: 16px;
+                        line-height: 20px;
+                        margin-bottom: 10px;
+                    }
+
+                    .form-control {
+                        padding: 16px 16px 16px 48px;
+                    }
+
+                    .input-container {
+                        .icon-wrapper {
+                            left: 16px;
+                        }
+
+                        &.password-container {
+                            .icon-wrapper-two {
+                                right: 20px;
+                            }
+
+                            .form-control {
+                                padding: 16px 52px 16px 48px;
+                            }
+                        }
+                    }
+                }
+
+                .button-wrapper {
+                    .btn-signup {
+                        padding: 12px;
+                    }
+                }
+
+                .checkbox-wrapper {
+                    .form-check-input {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+
+            .signup-right-content {
+                justify-content: center;
+                .img-wrapper {
+                    margin-bottom: 40px;
+                }
+
+                .content {
+                    .heading {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .signup-section {
+        .signup-container {
+            .row {
+                flex-direction: column-reverse;
+            }
+
+            .signup-right-content {
+                padding: 45px 40px 35px;
+                min-height: unset;
+
+                .img-wrapper {
+                    max-width: 300px;
+                    margin-bottom: 25px;
+                }
+
+                .content {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+
+        #step4-form {
+            .signup-left-content {
+                .logo-wrapper {
+                    margin: 0 auto 40px;
+                }
+
+                .form-input-wrapper {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .signup-section {
+        .signup-container {
+            .signup-left-content {
+                padding: 20px 30px 35px;
+            }
+
+            .signup-right-content {
+                padding: 20px 30px 35px;
+            }
+        }
+    }
+}

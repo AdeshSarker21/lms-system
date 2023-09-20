@@ -1,0 +1,28 @@
+.recomendation-slider-wrapper {
+  margin-bottom: 23px;
+}
+.recomendation-slider-wrapper .recomendation-slider .box {
+  padding: 10px 15px;
+  background-color: #FFFFFF;
+  border: 1px solid #D1DDFF;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #203864;
+}
+.recomendation-slider-wrapper .recomendation-slider .box .box-icon img {
+  width: 52px;
+  min-width: 52px;
+  margin-right: 5px;
+}
+.recomendation-slider-wrapper .recomendation-slider .collection-box {
+  margin-right: 15px;
+}
+.recomendation-slider-wrapper .recomendation-slider .slick-list {
+  clip-path: inset(-100vw -100vw -100vw 0);
+  overflow: visible;
+}/*# sourceMappingURL=slider.css.map */

@@ -1,0 +1,1056 @@
+// Hero section css start
+.hero-section {
+    position: relative;
+    overflow: hidden;
+
+    .bgshadow {
+        width: 502px;
+        height: 502px;
+        filter: blur(252px);
+        position: absolute;
+        border-radius: 50%;
+
+        &.shadow1 {
+            top: -72px;
+            left: -63px;
+            background-color: #F5772D66;
+        }
+
+        &.shadow2 {
+            background-color: #008081B2;
+            top: 30%;
+            left: -172px;
+        }
+
+        &.shadow3 {
+            background-color: #66428A;
+            top: 95px;
+            right: 0;
+        }
+    }
+
+    .hero-inner {
+        background-color: #203864;
+        padding-top: 135px;
+    }
+
+    .hero-content {
+        position: relative;
+
+        .hero-heading {
+            margin-bottom: 30px;
+            position: relative;
+
+            .plane-wrapper {
+                width: 167px;
+                position: absolute;
+                top: -50px;
+                left: 80px;
+
+                img {
+                    display: block;
+                }
+            }
+
+            .heading {
+                font-size: 50px;
+                line-height: 61px;
+                font-weight: 800;
+                color: #FFFFFF;
+                text-align: center;
+                text-transform: uppercase;
+                margin-bottom: 13px;
+
+                span {
+                    color: #F2AC30;
+                }
+            }
+
+            .sub-heading {
+                font-size: 23px;
+                line-height: 27px;
+                font-weight: 400;
+                color: #C4C4C4;
+                text-align: center;
+            }
+        }
+
+        .button-wrapper {
+            text-align: center;
+            margin-bottom: 46px;
+
+            .btn-primary {
+                padding: 15px 78px;
+                font-size: 20px;
+                line-height: 24px;
+                font-weight: 800;
+            }
+        }
+
+        .banner-img-wrapper {
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+    }
+}
+
+// Hero section css end
+// LMS section css start
+.lms-section {
+    padding: 180px 0 90px;
+    position: relative;
+    overflow: hidden;
+
+    .pattern-wrapper {
+        position: absolute;
+        top: -5%;
+        width: 362px;
+        z-index: 0;
+
+        .dot-pattern {
+            position: absolute;
+            bottom: -30px;
+            display: block;
+        }
+
+        &.pattern2 {
+            top: -5.2%;
+            right: 0;
+
+            .ribbon-right {
+                display: block;
+                margin-left: auto;
+            }
+
+            .dot-pattern {
+                bottom: 5px;
+            }
+        }
+    }
+
+    .section-heading {
+        text-align: center;
+        margin-bottom: 50px;
+
+        .subheading {
+            display: inline-block;
+            padding: 0 55px;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 50px;
+                height: 15px;
+                background: url(../images/arrow-icon.svg) no-repeat;
+                background-size: contain;
+                background-position: center center;
+                transform: translateY(-50%);
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0;
+                width: 50px;
+                height: 15px;
+                background: url(../images/arrow-icon.svg) no-repeat;
+                background-size: contain;
+                background-position: center center;
+                transform: translateY(-50%) rotate(180deg);
+            }
+        }
+    }
+}
+
+// LMS section css end
+// Learning Journey section css start
+.learning-journey-section {
+    padding: 90px 0 60px;
+
+    .section-heading {
+        max-width: 600px;
+        margin: 0 auto 32px;
+
+        .heading {
+            text-align: center;
+
+            span {
+                color: #FFC300;
+            }
+        }
+    }
+}
+
+// Learning Journey section css end
+
+// Student section css start
+
+.student-section {
+    padding: 90px 0;
+
+    .custom-row {
+        flex-direction: row-reverse;
+    }
+
+    .section-heading {
+        margin-bottom: 36px;
+
+        .heading {
+            line-height: 56px;
+            margin-bottom: 6px;
+            color: #203864;
+        }
+
+        .subheading {
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 500;
+            color: #203864;
+            max-width: 370px;
+            margin-bottom: 20px;
+
+            &.third-section {
+                font-size: 25px;
+                line-height: 39px;
+                font-weight: 500;
+                max-width: unset;
+
+                span {
+                    font-size: 28px;
+                    line-height: 39px;
+                    font-weight: 500;
+                    color: #FFC300;
+                }
+            }
+        }
+    }
+
+    .student-section-img-wrapper {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        max-width: 706px;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .circle-bg {
+            content: '';
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            max-width: 574px;
+            width: 100%;
+            max-height: 574px;
+            height: 100%;
+            background-color: #D6E4FF;
+            z-index: 1;
+            border-radius: 50%;
+            min-height: 500px;
+        }
+
+        img {
+            position: relative;
+            z-index: 2;
+        }
+    }
+}
+
+// Student section css end
+// Introduction section css start
+.introduction-section {
+    padding: 90px 0;
+
+    .section-heading {
+        margin-bottom: 47px;
+
+        .heading {
+            text-align: center;
+            font-size: 40px;
+            line-height: 78px;
+            font-weight: 700;
+            margin-bottom: 1px;
+        }
+
+        .subheading {
+            text-align: center;
+            max-width: 1014px;
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: 400;
+            margin: 0 auto;
+        }
+    }
+
+    .intro-content-wrapper {
+        padding-top: 154px;
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -34%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(../images/Rectangle-img3.svg) no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .img-wrapper {
+            max-width: 1143px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+
+            video {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+// Introduction section css end
+
+// Count section css start
+.count-section {
+    padding: 90px 0;
+
+    .count-content {
+        padding: 77px 87px;
+        background: url(../images/count-section-bg.svg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 20px;
+    }
+}
+
+// Count section css end
+// Empower section css start
+.lms-section {
+    &.empower-section {
+        padding: 90px 0;
+
+        .section-heading {
+            margin-bottom: 40px;
+        }
+
+        .custom-tab-section {
+            .nav-link {
+                &.active {
+                    color: #FFC300;
+                }
+            }
+        }
+    }
+}
+
+// Empower section css end
+
+// Discover section css start
+.discover-section {
+    padding: 90px 0;
+
+    .discover-inner {
+        background: linear-gradient(93.82deg, #BCCDFA -5.93%, #F0F4FF 103.88%);
+    }
+
+    .discover-content-left {
+        padding: 80px 0 50px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .section-heading {
+            margin-bottom: 13px;
+
+            .heading {
+                font-size: 29px;
+                line-height: 42px;
+                font-weight: 500;
+                color: #203864;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+
+            .subheading {
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 500;
+                color: #203864;
+            }
+        }
+
+        .btn-wrapper {
+            margin-top: auto;
+
+            .btn-primary {
+                background-color: #F2AC30;
+                color: #fff;
+                border-color: #203864;
+                padding: 16px 37px;
+                font-size: 17px;
+                line-height: 25px;
+                font-weight: 500;
+                width: max-content;
+                display: flex;
+                justify-content: flex-start;
+
+                span {
+                    position: relative;
+                    display: inline-block;
+
+                    img {
+                        &.non-active {
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 0;
+                            opacity: 0;
+                        }
+                    }
+                }
+
+                &:hover {
+                    span {
+                        img {
+                            &.active {
+                                opacity: 0;
+                            }
+
+                            &.non-active {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .discover-content-right {
+        .discover-slider-wrapper {
+            .discover-slider {
+                .slick-list {
+                    max-height: 510px !important;
+                }
+            }
+
+            .discover-slider2 {
+                .slick-list {
+                    max-height: 510px !important;
+                }
+            }
+
+            .img-wrapper {
+                margin: 15px 0;
+                border-radius: 20px;
+                overflow: hidden;
+
+                img {
+                    box-shadow: 0px 4.363636493682861px 25.090909957885742px 0px #00000012;
+                }
+            }
+        }
+    }
+}
+
+// Discover section css end
+
+// Get started section css start
+.get-started-section {
+    padding: 90px 0 0;
+
+    .get-started-content {
+        background: url(../images/get-started-bg.svg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        padding: 78px 46px 78px 0;
+        border-radius: 30px;
+        box-shadow: 0px 4px 64px 0px #C3C3C380;
+
+        .custom-row {
+            align-items: center;
+        }
+
+        .content-left {
+            display: flex;
+            align-items: center;
+
+            .icon-wrapper {
+                width: 83px;
+            }
+
+            .content-text {
+                font-size: 35px;
+                line-height: 41px;
+                font-weight: 500;
+                color: #8C90B6;
+                margin-bottom: 9px;
+            }
+
+            span {
+                display: block;
+                font-size: 35px;
+                line-height: 41px;
+                font-weight: 500;
+                color: #203864;
+            }
+        }
+
+        .content-right {
+            .btn-wrapper {
+                display: flex;
+                justify-content: flex-end;
+
+                .btn-primary {
+                    font-size: 17px;
+                    line-height: 25px;
+                    font-weight: 500;
+                    padding: 16px 37px;
+                    min-width: 172px;
+                }
+
+                .btn-contact {
+                    color: #FFFFFF;
+                    background-color: #1B253E;
+                    border-bottom-color: #FFC300;
+                    margin-right: 10px;
+                }
+
+                .btn-signup {
+                    color: #FFFFFF;
+                    background-color: #FFC300;
+                    border-bottom-color: #203864;
+                }
+            }
+        }
+    }
+}
+
+// Get started section css end
+
+@media (min-width: 1200px) and (max-width:1399px) {
+    .hero-section .hero-content .hero-heading .plane-wrapper {
+        left: 20px;
+        // width: 115px;
+    }
+}
+
+@media (min-width: 991px) and (max-width:1199px) {
+    .hero-section .hero-content .hero-heading .plane-wrapper {
+        left: -34px;
+        width: 115px;
+        top: -16px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .get-started-section {
+        .get-started-content {
+            padding: 50px 30px 50px 0;
+
+            .content-left {
+                .content-text {
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+
+                span {
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+            }
+
+            .content-right {
+                .btn-wrapper {
+                    .btn-primary {
+                        font-size: 15px;
+                        line-height: 22px;
+                        padding: 16px 25px;
+                        min-width: 127px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-section {
+        .hero-inner {
+            padding-top: 65px;
+        }
+
+        .hero-content {
+            .hero-heading {
+                .heading {
+                    font-size: 42px;
+                    line-height: 54px;
+                }
+
+                .sub-heading {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+
+                .plane-wrapper {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .lms-section {
+        padding: 100px 0 45px;
+
+        .pattern-wrapper {
+            width: 150px;
+
+            .ribbon-left {
+                max-width: 60%;
+            }
+
+            .ribbon-right {
+                max-width: 70%;
+            }
+        }
+
+        .section-heading {
+            margin-bottom: 30px;
+        }
+    }
+
+    .learning-journey-section {
+        padding: 45px 0 15px;
+    }
+
+    .student-section {
+        padding: 45px 0;
+
+        .section-content {
+            margin-bottom: 50px;
+        }
+
+        .student-section-img-wrapper {
+            width: 350px;
+            height: 350px;
+
+            .circle-bg {
+                min-height: unset;
+            }
+        }
+    }
+
+    .introduction-section {
+        padding: 45px 0;
+
+        .intro-content-wrapper {
+            padding-top: 100px;
+        }
+    }
+
+    .count-section {
+        padding: 45px 0;
+
+        .count-content {
+            padding: 30px 40px 10px;
+        }
+    }
+
+    .lms-section {
+        &.empower-section {
+            padding: 45px 0;
+
+            .section-heading {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .discover-section {
+        padding: 45px 0;
+
+        .discover-content-left {
+            padding: 40px 0;
+        }
+    }
+
+    .get-started-section {
+        padding: 45px 0 0;
+
+        .get-started-content {
+            padding: 30px;
+
+            .content-left {
+                justify-content: center;
+                margin-bottom: 15px;
+            }
+
+            .content-right {
+                .btn-wrapper {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-section {
+        .hero-inner {
+            padding-top: 40px;
+        }
+
+        .bgshadow {
+            width: 250px;
+            height: 250px;
+        }
+
+        .hero-content {
+            .hero-heading {
+                .heading {
+                    font-size: 36px;
+                    line-height: 48px;
+                }
+
+                .sub-heading {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+
+    .lms-section {
+        padding: 45px 0 45px;
+
+        .pattern-wrapper {
+            display: none;
+        }
+
+        .section-heading {
+            .subheading {
+                padding: 0 40px;
+
+                &::before {
+                    width: 35px;
+                }
+
+                &::after {
+                    width: 35px;
+                }
+            }
+        }
+    }
+
+    .learning-journey-section {
+        padding: 30px 0 15px;
+    }
+
+    .student-section {
+        padding: 30px 0;
+
+        .section-heading {
+            .heading {
+                line-height: 40px;
+            }
+
+            .subheading {
+                &.third-section {
+                    font-size: 20px;
+                    line-height: 30px;
+
+                    span {
+                        font-size: 22px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+    }
+
+    .introduction-section {
+        padding: 40px 0;
+
+        .section-heading {
+            margin-bottom: 30px;
+
+            .heading {
+                font-size: 34px;
+                line-height: 40px;
+            }
+
+            .subheading {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+
+        .intro-content-wrapper {
+            padding-top: 50px;
+        }
+    }
+
+    .lms-section {
+        &.empower-section {
+            padding: 30px 0;
+        }
+    }
+
+    .discover-section {
+        padding: 30px 0;
+
+        .discover-content-left {
+            .section-heading {
+                .heading {
+                    font-size: 24px;
+                    line-height: 35px;
+                }
+
+                .subheading {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+
+            .btn-wrapper {
+                .btn-primary {
+                    font-size: 15px;
+                    line-height: 22px;
+                    padding: 12px 28px;
+                }
+            }
+        }
+
+        .discover-content-right {
+            .discover-slider-wrapper {
+                .discover-slider {
+                    .slick-list {
+                        max-height: 400px !important;
+                    }
+                }
+
+                .discover-slider2 {
+                    .slick-list {
+                        max-height: 400px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .get-started-section {
+        padding: 30px 0 0;
+
+        .get-started-content {
+            .content-left {
+                .content-text {
+                    font-size: 26px;
+                    line-height: 30px;
+                }
+
+                span {
+                    font-size: 26px;
+                    line-height: 30px;
+                }
+            }
+
+            .content-right {
+                .btn-wrapper {
+                    .btn-primary {
+                        padding: 12px 28px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .hero-section {
+        .hero-content {
+            .hero-heading {
+                margin-bottom: 20px;
+
+                .heading {
+                    font-size: 30px;
+                    line-height: 42px;
+                }
+            }
+
+            .button-wrapper {
+                margin-bottom: 35px;
+
+                .btn-primary {
+                    padding: 10px 50px;
+                }
+            }
+        }
+    }
+
+    .lms-section {
+        padding: 40px 0 30px;
+
+        .section-heading {
+            .subheading {
+                padding: 0;
+
+                &::before {
+                    display: none;
+                }
+
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .learning-journey-section {
+        padding: 30px 0 15px;
+    }
+
+    .student-section {
+        padding: 30px 0;
+
+        .section-heading {
+            .heading {
+                line-height: 34px;
+            }
+
+            .subheading {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .introduction-section {
+        padding: 30px 0;
+
+        .section-heading {
+            .heading {
+                font-size: 28px;
+                line-height: 34px;
+            }
+
+            .subheading {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .count-section {
+        padding: 30px 0;
+
+        .count-content {
+            padding: 30px 30px 10px;
+        }
+    }
+
+    .lms-section {
+        &.empower-section {
+            padding: 30px 0;
+        }
+    }
+
+    .get-started-section {
+        .get-started-content {
+            padding: 20px;
+        }
+    }
+}
+
+@media(max-width: 425px) {
+    .get-started-section {
+        .get-started-content {
+            .content-left {
+                .icon-wrapper {
+                    width: 65px;
+                }
+
+                .content-text {
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+
+                span {
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+
+    .student-section {
+        .section-heading {
+            margin-bottom: 20px;
+        }
+
+        .student-section-img-wrapper {
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+    .discover-section {
+        .discover-content-right {
+            max-width: 280px;
+            margin: 0 auto;
+
+            .discover-slider-wrapper {
+                .img-wrapper {
+                    margin: 6px 0;
+                    border-radius: 10px;
+                }
+
+                .discover-slider {
+                    .slick-list {
+                        max-height: 200px !important;
+                    }
+                }
+
+                .discover-slider2 {
+                    .slick-list {
+                        max-height: 200px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 350px) {
+    .get-started-section {
+        .get-started-content {
+            .content-right {
+                .btn-wrapper {
+                    flex-direction: column;
+
+                    .btn-contact {
+                        margin-right: 0;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

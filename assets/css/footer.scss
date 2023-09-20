@@ -1,0 +1,99 @@
+// Footer section css start
+.footer {
+    background: url(../images/footer-bg.svg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: -77px;
+
+    .footer-top {
+        padding: 174px 0 83px;
+
+        .customr-row {
+            align-items: center;
+        }
+
+        .logo-content-wrapper {
+            .logo-wrapper {
+                width: 176px;
+                margin-bottom: 11px;
+                display: inline-block;
+            }
+
+            .tagline {
+                font-size: 15px;
+                line-height: 20px;
+                font-weight: 300;
+                color: #ABB0D8;
+            }
+        }
+
+        .footer-link-wrapper {
+            .footer-item {
+                .footer-link {
+                    font-size: 18px;
+                    line-height: 21px;
+                    font-weight: 400;
+                    color: #ABB0D8;
+                    display: block;
+                    margin-bottom: 10px;
+                    transition: all .3s linear;
+
+                    &:hover {
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding-bottom: 27px;
+
+        p {
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 400;
+            color: #ABB0D8;
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .footer {
+        .footer-top {
+            padding: 135px 0 40px;
+
+            .logo-content-wrapper {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .footer {
+        .footer-top {
+            padding: 110px 0 30px;
+
+            .footer-link-wrapper {
+                .footer-item {
+                    .footer-link {
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+                }
+            }
+        }
+
+        .footer-bottom {
+            p {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+}
+
+// Footer section end

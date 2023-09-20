@@ -1,0 +1,132 @@
+// Header section css start
+.header {
+    background-color: #203864;
+
+    .navbar-toggler {
+        color: #FFFFFF;
+        border: 1px solid #FFC300 !important;
+        width: 40px;
+        padding: 5px;
+
+        img {
+            display: block;
+        }
+    }
+
+    .navbar {
+        background-color: #203864;
+        z-index: 1;
+        min-height: 73px;
+    }
+
+    .header-offcanvas {
+        background-color: #203864;
+
+        .btn-close {
+            background: url(../images/close-icon.svg) no-repeat;
+            background-position: center center;
+            background-size: cover;
+            opacity: 1;
+        }
+
+        .offcanvas-body {
+            display: flex;
+            justify-content: flex-end;
+
+            .navbar-nav {
+                align-items: center;
+
+                .nav-item {
+                    .nav-link {
+                        font-size: 20px;
+                        line-height: 24px;
+                        font-weight: 500;
+                        color: #FFFFFF;
+                        text-transform: uppercase;
+                        position: relative;
+
+                        &:before {
+                            transition: all .4s;
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            bottom: -2px;
+                            left: 0;
+                            height: 1px;
+                            border-radius: 10px;
+                        }
+
+                        &:hover {
+                            &:before {
+                                background-color: #FFC300;
+                            }
+                        }
+                    }
+
+                    .btn-outline-primary {
+                        padding: 16px 36px;
+                    }
+
+                    &:not(:last-child) {
+                        margin-right: 53px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .header {
+        .header-offcanvas {
+            z-index: 1041;
+
+            .offcanvas-body {
+                justify-content: flex-start;
+                padding-top: 0;
+
+                .navbar-nav {
+                    align-items: flex-start;
+
+                    .nav-item {
+                        margin-bottom: 10px;
+
+                        &:not(:last-child) {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .header {
+        .header-offcanvas {
+            .offcanvas-body {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
+
+                        .btn-outline-primary {
+                            padding: 12px 28px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .header .header-offcanvas .offcanvas-body .navbar-nav .nav-item .btn-outline-primary {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+// Header section css end

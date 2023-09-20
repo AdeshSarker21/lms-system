@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Slick css -->
+    <link rel="stylesheet" href="assets/css/mycourse-slick-theme.css">
+    <link rel="stylesheet" href="assets/css/slick.min.css" />
+    
+    <!-- Custom css -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+    <link rel="stylesheet" href="assets/css/user-header.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>My course</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="page-container">
+            <div class="container-fluid no-padding">
+                <div class="row">
+                    <div id="sideMenu" class="col-lg-3 p-0">
+                        <!-- Sidebar menu start -->
+                        <div class="page-left custom-scroll">
+                            <span class="side-menu-toggle" id="sidemenutoggle">
+                                <i class="fa-solid fa-angles-left menuleft-arrow"></i>
+                                <i class="fa-solid fa-angles-right menuright-arrow"></i>
+                            </span>
+                            <button class="btn close-btn">
+                                <img src="assets/images/close-circle-icon.svg" alt="Close" />
+                            </button>
+                            <div>
+                                <div class="logo-wrapper">
+                                    <img src="assets/images/logo-dark.svg" alt="logo" />
+                                </div>
+                            </div>
+                            <div class="sidebar-menu">
+                                <ul class="sidebar-menu-list">
+                                    <li class="list-item">
+                                        <a href="home.html" class="list-link ">
+                                            <span class="icon icon-m-right">
+                                                <img src="assets/images/home-icon-dark.svg" alt="Home"
+                                                    class="non-active">
+                                                <img src="assets/images/home-icon.svg" alt="Home" class="active">
+                                            </span>
+                                            <span class="menu-item-hide-show">Home</span>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="mycourses.html" class="list-link active">
+                                            <span class="icon icon-m-right">
+                                                <img src="assets/images/teacher-dark.svg" alt="My Courses"
+                                                    class="non-active">
+                                                <img src="assets/images/teacher.svg" alt="My Courses" class="active">
+                                            </span>
+                                            <span class="menu-item-hide-show"> My Courses</span>
+                                           
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="student-main-page.html" class="list-link">
+                                            <span class="icon icon-m-right">
+                                                <img src="assets/images/user-square-dark.svg" alt="Students"
+                                                    class="non-active">
+                                                <img src="assets/images/user-square.svg" alt="Students" class="active">
+                                            </span>
+                                            <span class="menu-item-hide-show"> Students</span>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#" class="list-link">
+                                            <span class="icon icon-m-right">
+                                                <img src="assets/images/medal-star-dark.svg" alt="Grades"
+                                                    class="non-active">
+                                                <img src="assets/images/medal-star.svg" alt="Grades" class="active">
+                                            </span>
+                                            <span class="menu-item-hide-show">  Grades</span>
+                                           
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#" class="list-link">
+                                            <span class="icon icon-m-right">
+                                                <img src="assets/images/document-text-dark.svg" alt="Assignment"
+                                                    class="non-active">
+                                                <img src="assets/images/document-text.svg" alt="Assignment"
+                                                    class="active">
+                                            </span>
+                                            <span class="menu-item-hide-show">  Assignment</span>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#" class="list-link">
+                                            <span class="icon icon-m-right">
+                                                <img src="assets/images/book-dark.svg" alt="Rozna Shelf"
+                                                    class="non-active">
+                                                <img src="assets/images/book.svg" alt="Rozna Shelf" class="active">
+                                            </span>
+                                            <span class="menu-item-hide-show">   Rozna Shelf</span>
+                                           
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#" class="list-link">
+                                            <span class="icon icon-m-right">
+                                                <img src="assets/images/idea-dark.svg" alt="Rozna Quizable"
+                                                    class="non-active">
+                                                <img src="assets/images/idea.svg" alt="Rozna Quizable" class="active">
+                                            </span>
+                                            <span class="menu-item-hide-show">Rozna Quizable</span>
+
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#" class="list-link">
+                                            <span class="icon icon-m-right">
+                                                <img src="assets/images/mirroring-screen-dark.svg" alt="Elevate"
+                                                    class="non-active">
+                                                <img src="assets/images/mirroring-screen.svg" alt="Elevate"
+                                                    class="active">
+                                            </span>
+                                            <span class="menu-item-hide-show">Elevate</span>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#" class="list-link">
+                                            <span class="icon icon-m-right">
+                                                <img src="assets/images/messages-icon-dark.svg" alt="Rozna Space"
+                                                    class="non-active">
+                                                <img src="assets/images/messages-icon.svg" alt="Rozna Space"
+                                                    class="active">
+                                            </span>
+                                            <span class="menu-item-hide-show">Rozna Space</span>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#" class="list-link">
+                                            <span class="icon icon-m-right">
+                                                <img src="assets/images/shopping-cart-dark.svg" alt="Product"
+                                                    class="non-active">
+                                                <img src="assets/images/shopping-cart.svg" alt="Product" class="active">
+                                            </span>
+                                            <span class="menu-item-hide-show">Product</span>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#" class="list-link">
+                                            <span class="icon icon-m-right">
+                                                <img src="assets/images/analytics-dark.svg" alt="Analytics"
+                                                    class="non-active">
+                                                <img src="assets/images/analytics.svg" alt="Analytics" class="active">
+                                            </span>
+                                            <span class="menu-item-hide-show"> Analytics</span>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#" class="list-link">
+                                            <span class="icon icon-m-right">
+                                                <img src="assets/images/add-square-dark.svg" alt="Create Notes"
+                                                    class="non-active">
+                                                <img src="assets/images/add-square.svg" alt="Create Notes"
+                                                    class="active">
+                                            </span>
+                                            <span class="menu-item-hide-show"> Create Notes</span>
+                                           
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#" class="list-link">
+                                            <span class="icon icon-m-right">
+                                                <img src="assets/images/presention-chart-dark.svg" alt="Rozna Breeze"
+                                                    class="non-active">
+                                                <img src="assets/images/presention-chart.svg" alt="Rozna Breeze"
+                                                    class="active">
+                                            </span>
+                                            <span class="menu-item-hide-show"> Rozna Breeze</span>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#" class="list-link">
+                                            <span class="icon icon-m-right">
+                                                <img src="assets/images/reader-dark.svg" alt="Rozna L & R"
+                                                    class="non-active">
+                                                <img src="assets/images/reader.svg" alt="Rozna L & R" class="active">
+                                            </span>
+                                            <span class="menu-item-hide-show"> Rozna L & R</span>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#" class="list-link">
+                                            <span class="icon icon-m-right">
+                                                <img src="assets/images/solar_key-dark.svg" alt="Product & Key"
+                                                    class="non-active">
+                                                <img src="assets/images/solar_key.svg" alt="Product & Key"
+                                                    class="active">
+                                            </span>
+                                            <span class="menu-item-hide-show">  Product & Key</span>
+                                           
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Sidebar menu end -->
+                    </div>
+                    <div id="fullPage" class="col-lg-9 p-0">
+                        <div class="page-right">
+                            <div class="top-header">
+                                <div class="header-left">
+                                    <div class="logo-wrapper">
+                                        <img src="assets/images/symbols_verified.svg" alt="EDUNITED">
+                                        EDUNITED
+                                    </div>
+                                </div>
+                                <div class="header-right">
+                                    <button class="notifivation-btn btn menu-btn">
+                                        <img src="assets/images/menu.svg" alt="notification" />
+                                    </button>
+                                    <button class="notifivation-btn btn">
+                                        <img src="assets/images/notification-icon.svg" alt="notification" />
+                                    </button>
+                                    <div class="dropdown profile-dropdown">
+                                        <button class="btn btn-profile dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <div class="profile-img-wrapper">
+                                                <img src="assets/images/profile-img.png" alt="Manav Jones">
+                                            </div>
+                                            <div class="profile-text">
+                                                <span class="msg">Welcome back,</span>
+                                                <span class="name">Manav Jones</span>
+                                            </div>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-item">
+                                                <div class="dropdown-top">
+                                                    <div class="profile-img">
+                                                        <img src="assets/images/profile-img.png" alt="">
+                                                    </div>
+                                                    <h5 class="name">Manav Jones</h5>
+                                                </div>
+                                                <button class="btn btn-logout">
+                                                    Logout
+                                                    <img src="assets/images/logout-icon.svg" alt="Logout" />
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-content">
+                                <!-- Hero banner start -->
+                                <section class="hero-banner mycourses-search-area">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xxl-6 col-xl-4 col-md-4 col-sm-12" >
+                                                <div class=" search-box-area">
+                                                    <input type="search" class="mycourses-search-box" placeholder="Search courses here">
+                                                    <span class="search-icon"><img src="assets/images/create-cource/search-icon.svg" alt=""></span>
+                                                </div>
+                                            </div>
+                                            <div class=" d-flex justify-content-end custom-flex col-xxl-6 col-xl-8 col-md-8 col-sm-12">
+                                                <a href="create-course.html" class="course-collection-btn">Your Course Collection <span class="course-collection-dropdown"><img src="assets/images/create-cource/round-dropdown.svg" alt=""></span></a>
+                                                <a href="add-new-course.html" class="new-course-btn"><span class="new-course-add"><img src="assets/images/create-cource/plus-icon.svg" alt=""></span>Add New Course </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- Hero banner end -->
+
+                                <!-- Collection section start -->
+                                <section class="collection-section">
+                                    <div class="collection-inner">
+                                        <div class="container-fluid p-0">
+                                            <div class="section-title-wrapper">
+                                                <h3 class="section-title">Popular Collections</h3>
+                                                <a href="#" class="section-header-link">See All</a>
+                                            </div>
+                                            <div class="recomendation-slider-wrapper popular-collection-slider">
+                                                <div class="popular-slider">
+                                                    <div>
+                                                        <div class="collection-box">
+                                                            <div class="box-icon">
+                                                                <img src="assets/images/collection-img1.png"
+                                                                    alt="collection-img">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="collection-box">
+                                                            <div class="box-icon">
+                                                                <img src="assets/images/collection-img2.png"
+                                                                    alt="collection-img">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="collection-box">
+                                                            <div class="box-icon">
+                                                                <img src="assets/images/collection-img3.png"
+                                                                    alt="collection-img">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="collection-box">
+                                                            <div class="box-icon">
+                                                                <img src="assets/images/collection-img4.png"
+                                                                    alt="collection-img">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="collection-box">
+                                                            <div class="box-icon">
+                                                                <img src="assets/images/collection-img1.png"
+                                                                    alt="collection-img">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="collection-box">
+                                                            <div class="box-icon">
+                                                                <img src="assets/images/collection-img2.png"
+                                                                    alt="collection-img">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="collection-box">
+                                                            <div class="box-icon">
+                                                                <img src="assets/images/collection-img3.png"
+                                                                    alt="collection-img">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="collection-box">
+                                                            <div class="box-icon">
+                                                                <img src="assets/images/collection-img4.png"
+                                                                    alt="collection-img">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- Collection section end -->
+                                <!-- my course  section start -->
+                                <section class="reconmendation-section">
+                                    <div class="reconmendation-inner">
+                                        <div class="container-fluid p-0">
+                                            <div class="section-title-wrapper">
+                                                <h3 class="section-title">My course</h3>
+                                            </div>
+                                            <div class="recomendation-slider-wrapper">
+                                                <div class="my-course-slider">
+                                                    <div>
+                                                        <div class="box " id="agricultureCourse">
+                                                            <div class="box-icon">
+                                                                <img src="assets/images/agriculture-icon.svg"
+                                                                    alt="Agriculture">
+                                                            </div>
+                                                            Agriculture
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="box">
+                                                            <div class="box-icon">
+                                                                <img src="assets/images/law-icon.svg" alt="Law">
+                                                            </div>
+                                                            Law
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="box">
+                                                            <div class="box-icon">
+                                                                <img src="assets/images/science-icon.svg"
+                                                                    alt="Sciences">
+                                                            </div>
+                                                            Sciences
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="box">
+                                                            <div class="box-icon">
+                                                                <img src="assets/images/economy-icon.svg" alt="Economy">
+                                                            </div>
+                                                            Economy
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="box">
+                                                            <div class="box-icon">
+                                                                <img src="assets/images/english-icon.svg"
+                                                                    alt="English Language">
+                                                            </div>
+                                                            English Language
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="box">
+                                                            <div class="box-icon">
+                                                                <img src="assets/images/arts-icon.svg" alt="Arts">
+                                                            </div>
+                                                            Arts
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="box">
+                                                            <div class="box-icon">
+                                                                <img src="assets/images/math-icon.svg" alt="Math">
+                                                            </div>
+                                                            Math
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="box">
+                                                            <div class="box-icon">
+                                                                <img src="assets/images/geography-icon.svg"
+                                                                    alt="Geography">
+                                                            </div>
+                                                            Geography
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="box">
+                                                            <div class="box-icon">
+                                                                <img src="assets/images/humanity-icon.svg"
+                                                                    alt="Humanities">
+                                                            </div>
+                                                            Humanities
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="box">
+                                                            <div class="box-icon">
+                                                                <img src="assets/images/it-icon.svg" alt="IT">
+                                                            </div>
+                                                            IT
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="box">
+                                                            <div class="box-icon">
+                                                                <img src="assets/images/general-intrest-icon.svg"
+                                                                    alt="General Interest">
+                                                            </div>
+                                                            General Interest
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="box">
+                                                            <div class="box-icon">
+                                                                <img src="assets/images/education-icon.svg"
+                                                                    alt="Education">
+                                                            </div>
+                                                            Education
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="box">
+                                                            <div class="box-icon">
+                                                                <img src="assets/images/engineering-icon.svg"
+                                                                    alt="Engineering">
+                                                            </div>
+                                                            Engineering
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 card-col">
+                                                    <div class="card-light">
+                                                        <div class="card-img">
+                                                            <img src="assets/images/create-cource/cource-card-images.png"
+                                                                alt="General Knowledge" />
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <span class="course-card-badge">Law</span>
+                                                            <h5 class="course-card-title">Mathematics Formula</h5>
+                                                            <div class="card-date-length">
+                                                                <span>12-2-2023 <span class="card-dot"></span> 13-4-2023</span>
+                                                            </div>
+                                                            <div class="card-button">
+                                                                <button class="card-btn">
+                                                                    <span class="card-delete"><img src="assets/images/create-cource/delete.svg" alt="">Delete</span>
+                                                                </button>
+                                                                <button class="card-btn">
+                                                                    <span class="card-edit"><img src="assets/images/create-cource/edite.svg" alt="">Edit</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 card-col">
+                                                    <div class="card-light">
+                                                        <div class="card-img">
+                                                            <img src="assets/images/create-cource/cource-card-images.png"
+                                                                alt="General Knowledge" />
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <span class="course-card-badge">Economy</span>
+                                                            <h5 class="course-card-title">Mathematics Formula</h5>
+                                                            <div class="card-date-length">
+                                                                <span>12-2-2023 <span class="card-dot"></span> 13-4-2023</span>
+                                                            </div>
+                                                            <div class="card-button">
+                                                                <button class="card-btn">
+                                                                    <span class="card-delete"><img src="assets/images/create-cource/delete.svg" alt="">Delete</span>
+                                                                </button>
+                                                                <button class="card-btn">
+                                                                    <span class="card-edit"><img src="assets/images/create-cource/edite.svg" alt="">Edit</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 card-col">
+                                                    <div class="card-light">
+                                                        <div class="card-img">
+                                                            <img src="assets/images/create-cource/cource-card-images.png"
+                                                                alt="General Knowledge" />
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <span class="course-card-badge">English Language</span>
+                                                            <h5 class="course-card-title">Mathematics Formula</h5>
+                                                            <div class="card-date-length">
+                                                                <span>12-2-2023 <span class="card-dot"></span> 13-4-2023</span>
+                                                            </div>
+                                                            <div class="card-button">
+                                                                <button class="card-btn">
+                                                                    <span class="card-delete"><img src="assets/images/create-cource/delete.svg" alt="">Delete</span>
+                                                                </button>
+                                                                <button class="card-btn">
+                                                                    <span class="card-edit"><img src="assets/images/create-cource/edite.svg" alt="">Edit</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 card-col">
+                                                    <div class="card-light">
+                                                        <div class="card-img">
+                                                            <img src="assets/images/create-cource/cource-card-images.png"
+                                                                alt="General Knowledge" />
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <span class="course-card-badge">Agriculture</span>
+                                                            <h5 class="course-card-title">Mathematics Formula</h5>
+                                                            <div class="card-date-length">
+                                                                <span>12-2-2023 <span class="card-dot"></span> 13-4-2023</span>
+                                                            </div>
+                                                            <div class="card-button">
+                                                                <button class="card-btn">
+                                                                    <span class="card-delete"><img src="assets/images/create-cource/delete.svg" alt="">Delete</span>
+                                                                </button>
+                                                                <button class="card-btn">
+                                                                    <span class="card-edit"><img src="assets/images/create-cource/edite.svg" alt="">Edit</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 card-col">
+                                                    <div class="card-light">
+                                                        <div class="card-img">
+                                                            <img src="assets/images/create-cource/cource-card-images.png"
+                                                                alt="General Knowledge" />
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <span class="course-card-badge">Agriculture</span>
+                                                            <h5 class="course-card-title">Mathematics Formula</h5>
+                                                            <div class="card-date-length">
+                                                                <span>12-2-2023 <span class="card-dot"></span> 13-4-2023</span>
+                                                            </div>
+                                                            <div class="card-button">
+                                                                <button class="card-btn">
+                                                                    <span class="card-delete"><img src="assets/images/create-cource/delete.svg" alt="">Delete</span>
+                                                                </button>
+                                                                <button class="card-btn">
+                                                                    <span class="card-edit"><img src="assets/images/create-cource/edite.svg" alt="">Edit</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 card-col">
+                                                    <div class="card-light">
+                                                        <div class="card-img">
+                                                            <img src="assets/images/create-cource/cource-card-images.png"
+                                                                alt="General Knowledge" />
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <span class="course-card-badge">Agriculture</span>
+                                                            <h5 class="course-card-title">Mathematics Formula</h5>
+                                                            <div class="card-date-length">
+                                                                <span>12-2-2023 <span class="card-dot"></span> 13-4-2023</span>
+                                                            </div>
+                                                            <div class="card-button">
+                                                                <button class="card-btn">
+                                                                    <span class="card-delete"><img src="assets/images/create-cource/delete.svg" alt="">Delete</span>
+                                                                </button>
+                                                                <button class="card-btn">
+                                                                    <span class="card-edit"><img src="assets/images/create-cource/edite.svg" alt="">Edit</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 card-col">
+                                                    <div class="card-light">
+                                                        <div class="card-img">
+                                                            <img src="assets/images/create-cource/cource-card-images.png"
+                                                                alt="General Knowledge" />
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <span class="course-card-badge">Agriculture</span>
+                                                            <h5 class="course-card-title">Mathematics Formula</h5>
+                                                            <div class="card-date-length">
+                                                                <span>12-2-2023 <span class="card-dot"></span> 13-4-2023</span>
+                                                            </div>
+                                                            <div class="card-button">
+                                                                <button class="card-btn">
+                                                                    <span class="card-delete"><img src="assets/images/create-cource/delete.svg" alt="">Delete</span>
+                                                                </button>
+                                                                <button class="card-btn">
+                                                                    <span class="card-edit"><img src="assets/images/create-cource/edite.svg" alt="">Edit</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 card-col">
+                                                    <div class="card-light">
+                                                        <div class="card-img">
+                                                            <img src="assets/images/create-cource/cource-card-images.png"
+                                                                alt="General Knowledge" />
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <span class="course-card-badge">Agriculture</span>
+                                                            <h5 class="course-card-title">Mathematics Formula</h5>
+                                                            <div class="card-date-length">
+                                                                <span>12-2-2023 <span class="card-dot"></span> 13-4-2023</span>
+                                                            </div>
+                                                            <div class="card-button">
+                                                                <button class="card-btn">
+                                                                    <span class="card-delete"><img src="assets/images/create-cource/delete.svg" alt="">Delete</span>
+                                                                </button>
+                                                                <button class="card-btn">
+                                                                    <span class="card-edit"><img src="assets/images/create-cource/edite.svg" alt="">Edit</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                               <!-- my course  section end -->
+
+                               <!-- showing page number area start -->
+                               <div class="showing-page-section">
+                                    <div class="showing-page-left-side">
+                                        <span>Showing</span>
+                                        <button>10 <img src="assets/images/create-cource/arrow-down.svg" alt=""></button>
+                                        <span>of 100</span>
+                                    </div>
+                                    <div class="showing-page-right-side">
+                                        <span>First</span>
+                                        <span>1</span>
+                                        <span>2</span>
+                                        <span>3</span>
+                                        <span>4</span>
+                                        <span>Last</span>
+                                    </div>
+                               </div>
+                               <!-- showing page number area end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Jquery Js -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- font awesome js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap Bundle Js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Slick js -->
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
